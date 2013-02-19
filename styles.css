@@ -204,7 +204,7 @@ a img{border:0px;}
 /****************************************************/
 /* MISC */
 /****************************************************/
-.top-divider, .bottom-divider{
+.top-divider, .bottom-divider, .middle-divider{
 	width:100%;
 	height:9px;
 	background:url(images/divider.png) repeat-x;
@@ -212,3 +212,4 @@ a img{border:0px;}
 }
 .top-divider{margin-bottom:40px;}
 .bottom-divider{margin-top:40px;}
+.middle-divider{margin-top:40px; margin-bottom:40px;}

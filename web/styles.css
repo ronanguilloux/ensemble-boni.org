@@ -69,6 +69,9 @@ a img{border:0px;}
 	height:24px;
 	background:url(images/sm-twitter-icon.png) no-repeat;
 }
+#about #top-social .twitter:hover{
+	background:url(images/sm-twitter-icon-hover.png) no-repeat;
+}
 #about #top-social .linkedin{
 	text-indent:-9999px;
 	display:block;
@@ -187,6 +190,7 @@ a img{border:0px;}
 }
 #connect #social-footer #sm-links li a.facebook{background:url(images/sm-facebook-icon.png) no-repeat;}
 #connect #social-footer #sm-links li a.twitter{background:url(images/sm-twitter-icon.png) no-repeat; width:31px;}
+#connect #social-footer #sm-links li a.twitter:hover{background:url(images/sm-twitter-icon-hover.png) no-repeat; width:31px;}
 #connect #social-footer #sm-links li a.dribble{background:url(images/sm-dribble-icon.png) no-repeat;}
 #connect #social-footer #sm-links li a.vimeo{background:url(images/sm-vimeo-icon.png) no-repeat; width:27px;}
 #connect #social-footer #sm-links li a.google{background:url(images/sm-google-icon.png) no-repeat;}

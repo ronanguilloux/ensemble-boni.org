@@ -1,0 +1,156 @@
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body{
+    background:#333333 url(/img/page-bg.jpg);
+    margin:0px;
+    font: 400 14px/16px 'Open Sans', Verdana, Helvetica, sans-serif;
+    color: rgb(130, 130, 130);
+}
+
+h1{font: 400 52px/54px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding:50px 0px 0px 0px;}
+h2{font: 400 40px/42px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
+h3{font: 400 24px/26px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding-bottom: 10px;}
+
+p {
+    line-height:1.5em;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    background:url(/img/body-bg.png);
+    padding: 0px 20px 100px 20px;
+}
+
+.parts {
+    padding: 100px 0px 100px 0px;
+}
+
+.divider-top, .divider-middle, .divider-bottom {
+    height: 9px;
+    margin-left: 30px;
+    background: url(/img/divider.png) repeat-x;
+    clear: both;
+}
+.divider-top {
+    margin: 30px 0px 50px 0px;
+}
+
+.divider-bottom {
+    margin: 50px 0px 30px 0px;
+}
+
+.divider-middle {
+    margin: 40px 0px 40px 0px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    font: 400 16px/18px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 15px 20px;
+    font: 400 16px/18px 'IM Fell Great Primer SC', Georgia, serif;
+    color: rgb(130, 130, 130);
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+
+
+/* APROPOS CONTENT
+-------------------------------------------------- */
+.twitter {
+    text-indent: -9999px;
+    display: block;
+    width: 31px;
+    height: 24px;
+    background: url(/img/sm-twitter-icon.png) no-repeat;
+}
+.twitter:hover {
+    background: url(/img/sm-twitter-icon-hover.png) no-repeat;
+}
+#apropos .twitter {
+    margin-top: 70px;
+}
+#contact .twitter {
+    margin-top: 30px;
+}
+.blason {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+
+/* CONCERTS CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns */
+#concerts h2 {
+    font-weight: normal;
+}
+#concerts .span4 p {
+    margin-right: 10px;
+}
+
+
+/* CONCERTS CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns */
+#contact {
+    margin-bottom: 200px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-inner {
+        margin: -20px;
+    }
+}
+

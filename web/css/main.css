@@ -3,11 +3,31 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-    padding-bottom: 40px;
-    color: #5a5a5a;
+body{
+    background:#333333 url(/img/page-bg.jpg);
+    margin:0px;
+    font: 400 14px/16px 'Open Sans', Verdana, Helvetica, sans-serif;
+    color: rgb(130, 130, 130);
 }
 
+h1{font: 400 52px/54px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding:50px 0px 50px 0px;}
+h2{font: 400 30px/28px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
+h3{font: 400 24px/26px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
+
+p {
+    line-height:1.5em;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    background:url(/img/body-bg.png);
+    padding: 0px 20px 100px 20px;
+}
+
+.parts {
+    padding: 100px 0px 100px 0px;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -28,11 +48,14 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    font: 400 16px/18px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)
 }
 
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
     padding: 15px 20px;
+    font: 400 16px/18px 'IM Fell Great Primer SC', Georgia, serif;
+    color: rgb(130, 130, 130);
 }
 
 /* Offset the responsive button for proper vertical alignment */
@@ -41,49 +64,45 @@ body {
 }
 
 
+
+/* APROPOS CONTENT
+-------------------------------------------------- */
+.twitter {
+    text-indent: -9999px;
+    display: block;
+    width: 31px;
+    height: 24px;
+    background: url(/img/sm-twitter-icon.png) no-repeat;
+}
+.twitter:hover {
+    background:url(/img/sm-twitter-icon-hover.png) no-repeat;
+}
+#apropos .twitter {
+    margin-top:70px;
+}
+
+
+
+
 /* CONCERTS CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns */
-.concerts h2 {
+#concerts h2 {
     font-weight: normal;
 }
-.concerts .span4 p {
-    margin-left: 10px;
+#concerts .span4 p {
     margin-right: 10px;
 }
 
 
-/* Featurettes
-------------------------- */
+/* CONCERTS CONTENT
+-------------------------------------------------- */
 
-.featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+/* Center align the text within the three columns */
+#contact {
+    margin-bottom: 200px;
 }
-.featurette {
-    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-    overflow: hidden; /* Vertically center images part 2: clear their floats. */
-}
-.featurette-image {
-    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-    margin-right: 40px;
-}
-.featurette-image.pull-right {
-    margin-left: 40px;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
 
 
 /* RESPONSIVE CSS
@@ -100,25 +119,6 @@ body {
         margin: -20px 0;
     }
 
-    .carousel .item {
-        height: 500px;
-    }
-    .carousel img {
-        width: auto;
-        height: 500px;
-    }
-
-    .featurette {
-        height: auto;
-        padding: 0;
-    }
-    .featurette-image.pull-left,
-    .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-    }
 }
 
 
@@ -127,44 +127,5 @@ body {
     .navbar-inner {
         margin: -20px;
     }
-
-    .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
-    .carousel .container {
-
-    }
-    .carousel .item {
-        height: 300px;
-    }
-    .carousel img {
-        height: 300px;
-    }
-    .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-    }
-    .carousel-caption h1 {
-        font-size: 30px;
-    }
-    .carousel-caption .lead,
-    .carousel-caption .btn {
-        font-size: 18px;
-    }
-
-    .marketing .span4 + .span4 {
-        margin-top: 40px;
-    }
-
-    .featurette-heading {
-        font-size: 30px;
-    }
-    .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
 }
 

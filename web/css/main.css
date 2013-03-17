@@ -10,9 +10,9 @@ body{
     color: rgb(130, 130, 130);
 }
 
-h1{font: 400 52px/54px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding:50px 0px 50px 0px;}
-h2{font: 400 30px/28px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
-h3{font: 400 24px/26px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
+h1{font: 400 52px/54px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding:50px 0px 0px 0px;}
+h2{font: 400 40px/42px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130)}
+h3{font: 400 24px/26px 'IM Fell Great Primer SC', Georgia, serif; color:rgb(130, 130, 130); padding-bottom: 10px;}
 
 p {
     line-height:1.5em;
@@ -27,6 +27,24 @@ p {
 
 .parts {
     padding: 100px 0px 100px 0px;
+}
+
+.divider-top, .divider-middle, .divider-bottom {
+    height: 9px;
+    margin-left: 30px;
+    background: url(/img/divider.png) repeat-x;
+    clear: both;
+}
+.divider-top {
+    margin: 30px 0px 50px 0px;
+}
+
+.divider-bottom {
+    margin: 50px 0px 30px 0px;
+}
+
+.divider-middle {
+    margin: 40px 0px 40px 0px;
 }
 
 
@@ -75,10 +93,17 @@ p {
     background: url(/img/sm-twitter-icon.png) no-repeat;
 }
 .twitter:hover {
-    background:url(/img/sm-twitter-icon-hover.png) no-repeat;
+    background: url(/img/sm-twitter-icon-hover.png) no-repeat;
 }
 #apropos .twitter {
-    margin-top:70px;
+    margin-top: 70px;
+}
+#contact .twitter {
+    margin-top: 30px;
+}
+.blason {
+    padding-top: 10px;
+    text-align: center;
 }
 
 

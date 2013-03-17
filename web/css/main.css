@@ -46,7 +46,9 @@ p {
 .divider-middle {
     margin: 40px 0px 40px 0px;
 }
-
+.past h3, .past p, .future h3, .future p {
+    color: rgb(70, 70, 70);
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

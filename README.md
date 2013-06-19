@@ -14,9 +14,9 @@ Acknowledgment
 License Information
 -------------------
 
-* Copyleft - 2013 - Ronan Guilloux, Ensemble Guillaume BONI
+* Copyright (c) 2013 Ensemble Vocal Guillaume BONI
+* Author: Ronan Guilloux & the World Wide Web
 * License for the ./web resources: https://github.com/twitter/bootstrap/blob/master/LICENSE
-* License for all the rest: GNU AGPL v3 - http://www.gnu.org/licenses/agpl-3.0.html
-* You can find a copy of this software here: https://github.com/ronanguilloux/ensemble-boni.org
-
+* License for all the rest: CC by-nc-sa - http://creativecommons.org/licenses/by-nc-sa/3.0
+* You can find a copy of all this here: https://github.com/ronanguilloux/ensemble-boni.org
 

@@ -140,6 +140,8 @@
                             <br />« Autour du Miserere d'Allegri, des Rameaux à la Passion ».</p>
                         <p>Au programme des pièces pour 4 à 8 voix mixtes
                             de compositeurs des XVI° au XX° :<br />Vittoria, Tallis, Praetorius, Duruflé, Poulenc...</p>
+                        <!-- generation (videos) : http://www.sistrix.com/video-rich-snippets/ -->
+                        <!-- generation (RDFa) : http://linter.structured-data.org/?url=http:%2F%2Fensemble-boni.org%2F -->
                         <!-- validation: https://developers.google.com/structured-data/testing-tool/ -->
                         <script type="application/ld+json">
                             [{
@@ -165,43 +167,69 @@
                                 "offers" : [{
                                     "@type" : "Offer",
                                     "name" : "Entrée libre",
-                                    "availability": "http://schema.org/InStock"
+                                    "availability": "http://schema.org/InStock",
+                                    "price": "0",
+                                    "priceCurrency": "EUR",
+                                    "url": "http://ensemble-boni.org/#concerts"
                                 }],
-                                "performer": [
-                                    {
-                                        "@type": "MusicGroup",
-                                        "name": "Enseble Guillaume Boni",
-                                        "description": "L'Ensemble vocal Guillaume BONI a été créé à Nantes en 2010 par Etienne ROULLET. Il réunit une petite formation de 8 choristes amateurs ou professionnels, autour d'un répertoire de musique sacrée a capella.",
-                                        "genre": "A cappella",
-                                        "logo": "http://ensemble-boni.org/img/music/blason.gif",
-                                        "image": "http://img.youtube.com/vi/a8ciMZYE-ek/default.jpg",
-                                        "sameAs": "http://ensemble-boni.org",
-                                        "foundingLocation": {
-                                            "@type": "City",
-                                            "name": "Nantes"
+                                "performer":
+                                {
+                                    "@type": "MusicGroup",
+                                    "name": "Enseble Guillaume Boni",
+                                    "description": "L'Ensemble vocal Guillaume BONI a été créé à Nantes en 2010 par Etienne ROULLET. Il réunit une petite formation de 8 choristes amateurs ou professionnels, autour d'un répertoire de musique sacrée a capella.",
+                                    "genre": "A cappella",
+                                    "logo": "http://ensemble-boni.org/img/music/blason.gif",
+                                    "image": "http://img.youtube.com/vi/a8ciMZYE-ek/default.jpg",
+                                    "sameAs": "http://ensemble-boni.org",
+                                    "foundingLocation": {
+                                        "@type": "City",
+                                        "name": "Nantes"
+                                    },
+                                    "foundingDate": "2010",
+                                    "member": [{
+                                        "@type": "OrganizationRole",
+                                        "member": {
+                                            "@type": "Person",
+                                            "name": "Etienne Roullet"
                                         },
-                                        "foundingDate": "2010",
-                                        "member": [{
-                                            "@type": "OrganizationRole",
-                                            "member": {
-                                                "@type": "Person",
-                                                "name": "Etienne Roullet"
-                                            },
-                                            "roleName": ["Direction"]
-                                        }],
-                                        "video": {
-                                            "@type": "VideoObject",
-                                            "embedUrl": "https://www.youtube.com/watch?v=a8ciMZYE-ek"
-                                            "description": "Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.",
-                                            "duration": "T5M01S",
-                                            "encodingFormat": "mp4",
-                                            "name": "Guillaume Boni - Stetit Jesus",
-                                            "thumbnail": "http://img.youtube.com/vi/a8ciMZYE-ek/default.jpg",
-                                            "genre": "A cappella"
-                                        }
-                                    }
-                                ]
-                            }]
+                                        "roleName": ["Direction"]
+                                    }]
+                                }
+                            },
+                            {
+                                "@context": "http://schema.org",
+                                "@type": "VideoObject",
+                                "embedUrl": "https://youtube.googleapis.com/v/a8ciMZYE-ek",
+                                "name": "Stetit Jesus - Guillaume Boni",
+                                "description": "Ensemble Guillaume Boni Nantes - Concert Eglise St Léger Orvault (44700) - Samedi 31 mars 2012. Direction Etienne Roullet",
+                                "thumbnailUrl": "http://i.ytimg.com/vi/a8ciMZYE-ek/hqdefault.jpg",
+                                "duration": "T05M02S",
+                                "encodingFormat": "mp4",
+                                "genre": "A cappella"
+                            },
+                            {
+                                "@context": "http://schema.org",
+                                "@type": "VideoObject",
+                                "embedUrl": "https://youtube.googleapis.com/v/zpSnWGd__Uc",
+                                "name": "Domine quis habitabit - Guillaume Boni",
+                                "description": "Concert en l'Eglise St Léger Orvault (44700) samedi 31 mars 2012 - Ensemble Guillaume Boni - Direction Etienne Roullet",
+                                "thumbnailUrl": "http://i.ytimg.com/vi/zpSnWGd__Uc/hqdefault.jpg",
+                                "duration": "T04M35S",
+                                "encodingFormat": "mp4",
+                                "genre": "A cappella"
+                            },
+                            {
+                                "@context": "http://schema.org",
+                                "@type": "VideoObject",
+                                "embedUrl": "https://youtube.googleapis.com/v/RpE07gP6am0",
+                                "name": "O beatae viae - Claudio Monteverdi",
+                                "description": "Concert du 31 Mars 2012 Eglise St Léger Orvault (44700) - Ensemble Guillaume Boni - Direction Etienne Roullet",
+                                "thumbnailUrl": "http://i.ytimg.com/vi/RpE07gP6am0/hqdefault.jpg",
+                                "duration": "T05M04S",
+                                "encodingFormat": "mp4",
+                                "genre": "A cappella"
+                            }
+                        ]
                         </script>
                     </div><!-- /.span8 -->
                 </div><!-- /.row -->
@@ -214,59 +242,29 @@
                 </div><!-- /.row -->
                 <div class="row">
                     <div class="span4">
-                        <h3><span itemprop="startDate" content="2014-11-23T16:00">Dimanche 23 novembre 2014</span>
-                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                                <br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <span itemprop="streetAddress">Eglise de l'Immaculée
-                                        <br/><span itemprop="addressLocality">Saint-Nazaire</span>
-                                        <span class="hide" itemprop="addressRegion">Loire-Atlantique</span>
-                                    </span>
-                                </span>
-                            </span>
-                        </h3>
-                        <p>
-                            <span itemprop="name">Concert de l'Ensemble Guillaume Boni
-                                <br/>avec le Choeur Grégorien "Cum Jubilo"</span>
-                            <a itemprop="url" href="http://ensemble-boni.org/#concerts"></a>
-                        </p>
-                        <p itemprop="description">Œuvres de Guillaume Boni (1565-1598), Francis Poulenc (1899-1963)</p>
+                        <h3>Dimanche 23 novembre 2014
+                            <br>Eglise de l'Immaculée
+                            <br/>Saint-Nazaire</h3>
+                        <p>Concert de l'Ensemble Guillaume Boni
+                            <br/>avec le Choeur Grégorien "Cum Jubilo"</p>
+                        <p>Œuvres de Guillaume Boni (1565-1598), Francis Poulenc (1899-1963)</p>
                     </div><!-- /.span4 -->
-                    <div class="span4" itemscope itemtype="http://schema.org/MusicEvent">
-                        <h3><span itemprop="startDate" content="2014-03-02T16:00">Dimanche 2 mars 2014</span>
-                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                                <br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <span itemprop="name">Eglise Saint-Gilles
-                                        de <span itemprop="addressLocality">Pornic</span>
-                                        <span class="hide" itemprop="addressRegion">Loire-Atlantique</span>
-                                    </span>
-                                </span>
-                            </span>
+                    <div class="span4">
+                        <h3>Dimanche 2 mars 2014
+                            <br>Eglise Saint-Gilles de Pornic
                         </h3>
-                        <p>
-                            <span itemprop="name">Concert de l'Ensemble Guillaume Boni</span>
-                            <a itemprop="url" href="http://ensemble-boni.org/#concerts"></a>
-                        </p>
-                        <p itemprop="description">Œuvres de Allegri, Bach, Boni, Lotti, Monteverdi, Poulenc</p>
+                        <p>Concert de l'Ensemble Guillaume Boni</p>
+                        <p>Œuvres de Allegri, Bach, Boni, Lotti, Monteverdi, Poulenc</p>
                     </div><!-- /.span4 -->
                 </div><!-- /.row -->
                 <div class="row">
-                    <div class="span4" itemscope itemtype="http://schema.org/MusicEvent">
-                        <h3><span itemprop="startDate" content="2014-04-13T17:00">Dimanche 13 avril 2014</span>
-                            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                                <br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    <span itemprop="name">Collégiale Saint-Aubin
-                                        de <span itemprop="addressLocality">Guérande</span>
-                                        <span itemprop="addressRegion" class="hide">Loire-Atlantique</span>
-                                    </span>
-                                </span>
-                            </span>
-                        </h3>
-                        <p>
-                            <span itemprop="name">Concert de l'Ensemble Guillaume Boni
-                                <br/>avec le Choeur Grégorien "Cum Jubilo"</span>
-                            <a itemprop="url" href="http://ensemble-boni.org/#concerts"></a>
+                    <div class="span4">
+                        <h3>Dimanche 13 avril 2014
+                                <br>Collégiale Saint-Aubinde Guérande</h3>
+                        <p>Concert de l'Ensemble Guillaume Boni
+                                <br/>avec le Choeur Grégorien "Cum Jubilo"
                         </p>
-                        <p itemprop="description">Concert sur le thème de la Semaine Sainte. Œuvres de Allegri, Boni, Lotti, Monteverdi</p>
+                        <p>Concert sur le thème de la Semaine Sainte. Œuvres de Allegri, Boni, Lotti, Monteverdi</p>
                     </div><!-- /.span4 -->
                     <div class="span4">
                         <h3>Dimanche 9 juin 2013<br>Eglise St-Aignan de Grandlieu</h3>

@@ -127,23 +127,23 @@
             <article id="concerts" class="parts">
                 <div class="row">
                     <div class="span12">
-                        <h1>Concerts récents</h1>
+                        <h1>Concerts à venir</h1>
                     </div>
                 </div><!-- /.row -->
 
                 <div class="divider-top"></div>
                 <div class="row">
                     <div class="span4">
-                        <h3>Dimanche 29 mars 2015
-                            <br>Église Saint-Martin de Chantenay, Nantes</h3>
+                        <h3>Dimanche 29 novembre 2015
+                            <br>Église Notre Dame de Toutes Joies, Nantes</h3>
                         <p>Concert de l'Ensemble Guillaume Boni :
-                            <br />« Autour du Miserere d'Allegri, des Rameaux à la Passion ».</p>
+                            <br />« vers Noël ».</p>
                         <p>Au programme des pièces pour 4 à 8 voix mixtes
-                            de compositeurs des XVI° au XX° :<br />Vittoria, Tallis, Praetorius, Duruflé, Poulenc...</p>
-                        <p>Vidéo du concert à visionner dans la section <a href="#youtube">medias</a>.</p>
+                            de compositeurs des XVI° au XX° :<br />Gabrielli, Poulenc, Npëls traditionnels...</p>
                         <!-- generation (videos) : http://www.sistrix.com/video-rich-snippets/ -->
                         <!-- generation (RDFa) : http://linter.structured-data.org/?url=http:%2F%2Fensemble-boni.org%2F -->
                         <!-- validation: https://developers.google.com/structured-data/testing-tool/ -->
+                        <!--
                         <script type="application/ld+json">
                             [{
                                 "@context" : "http://schema.org",
@@ -232,11 +232,14 @@
                             }
                         ]
                         </script>
+                        -->
                     </div><!-- /.span4 -->
                     <div class="span4">
+                        <!--
                         <a target="_blank" href="/archives/flyers/2015-03-29/Flyer_opacity_60.jpg">
                         <img src="/img/concerts/Flyer_opacity_40_thumbnail.jpeg"
                         alt="Affiche du Concert du 29 mars 2015 à Nantes" width="200px" /></a>
+                        -->
                     </div><!-- /.span4 -->
                 </div><!-- /.row -->
 
@@ -246,6 +249,17 @@
                         <h2>Concerts passés</h2>
                     </div>
                 </div><!-- /.row -->
+                <div class="row">
+                    <div class="span8">
+                        <h3>Dimanche 29 mars 2015
+                            <br>Église Saint-Martin de Chantenay, Nantes</h3>
+                        <p>Concert de l'Ensemble Guillaume Boni :
+                            <br />« Autour du Miserere d'Allegri, des Rameaux à la Passion ».</p>
+                        <p>Au programme des pièces pour 4 à 8 voix mixtes
+                            de compositeurs des XVI° au XX° :<br />Vittoria, Tallis, Praetorius, Duruflé, Poulenc...</p>
+                        <p>Vidéo du concert à visionner dans la section <a href="#youtube">medias</a>.</p>
+                    </div> 
+                </div>
                 <div class="row">
                     <div class="span4">
                         <h3>Dimanche 23 novembre 2014
@@ -316,7 +330,9 @@
                 </div><!-- /.row -->
                 <div class="row">
                     <div class="span12">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/B7Eyc9E9K58?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="videoPlayer1" width="640" height="360" src="https://www.youtube.com/embed/B7Eyc9E9K58?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                        <h4>Lire un titre :</h4> 
+                        <ul id="videoPlayer1Chapters" />
                     </div><!-- /.span12 -->
                 </div><!-- /.row -->
                 <div class="divider-middle"></div>
@@ -408,5 +424,57 @@
         <script src="/js/vendor/bootstrap.min.js"></script>
         <script src="/js/vendor/jquery.easing.1.3.js"></script>
         <script src="/js/main.js"></script>
+        <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('videoPlayer1', {
+          height: '390',
+          width: '640',
+          videoId: 'B7Eyc9E9K58',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        $list = $('#videoPlayer1Chapters');
+        for(seconds in chapters) {
+            $list.append('<li><a href="javascript:player.seekTo('+seconds+', true);">'+chapters[seconds]+'</a></li>');
+        }
+      }
+
+      function onPlayerStateChange(event) {
+      }
+
+      function jump(seconds) {
+        
+      }
+      
+      var chapters = {
+        0: "Introduction",
+        32: "Gloria Laus - Grégorien, Polyphonie B. Lemaire",
+        207: "Pueri Haebreorum - Jacobus Gallus (1550-1591)",
+        311: "Hosana Filio David - Michael Praetorius (1571 - 1621)",
+        379: "O Sacrum Convivium - Thomas Tallis (1515-1585)",
+        585: "Ubi Caritas - Maurice Duruflé (1902-1986)",
+        741: "Tristis Est - Guillaume Boni (1530-1598)",
+        909: "Nos Autem - Alfred Desenclos (1912-1971)",
+        1195: "Ecce homo - Guillaume Bouzignac (1587-1643)",
+        1325: "O vos omnes - Tomàs Luis de Victoria (1548-1611)",
+        1553: "Cruxifixus - Antonio Lotti (1665-1740)",
+        1732: "Misere - Gregorio Allegri (1582-1652)",
+        2399: "Sicut Mater - Guillaume Boni (1530-1598)",
+        2569: "Tota pulchra es Maria - Pablo Casals (1876-1973)",
+        2708: "Salve Regina - Francis Poulenc (1899-1963)",
+        2995: "Ave Maria - Tomàs Luis de Victoria (1548-1611)"
+      }
+    </script>
     </body>
 </html>
